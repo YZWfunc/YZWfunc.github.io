@@ -1,26 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/04/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
-
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+    <title>hexo博客使用ICARUS主题</title>
+    <url>/2020/04/07/hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8ICARUS%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>web前端</category>
+        <category>hexo</category>
+      </categories>
       <tags>
-        <tag>first</tag>
+        <tag>web前端</tag>
+        <tag>个人博客</tag>
+        <tag>react</tag>
+        <tag>hexo</tag>
+        <tag>icarus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用hexo搭建个人博客</title>
+    <url>/2020/04/07/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>随着互联网发展的热潮，越来越多的人拥有了属于自己的个人博客。相信绝大多数程序猿有过搭建个人博客的想法，不知道有没有人和我一样，一直想搭建一个属于自己的博客，设计出来的方案推翻了一版又一版，始终做不出自己想要的效果，最终放弃。反正我是觉得网页永远都是别人做的好看。于是我就找到了hexo，从入手学习到搭建完成也就用了两天的时间，如果你懂英语的话应该会学的更快吧。</p>
+<a id="more"></a>
+
+<h4 id="什么是hexo？"><a href="#什么是hexo？" class="headerlink" title="什么是hexo？"></a>什么是hexo？</h4><p>快速，简单且功能强大的博客框架</p>
+<blockquote>
+<h4 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h4><p>nodejs：<a href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></p>
+</blockquote>
+<h4 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h4><p>首先下载安装好node与Git(下载注意对应自己的系统,windows改下安装盘基本无脑下一步就可以了)</p>
+<p>然后检查一下安装成功没有</p>
+<p>windows+R 打开<code>运行</code> ，然后输入cmd回车</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">node -v    # 查看node是否安装成功</span><br><span class="line">npm -v # 查看npm是否安装成功</span><br></pre></td></tr></table></figure>
+
+<p>如果两条指令都打印出了软件的版本号，则表示安装成功。如果没有请检查<code>指令</code>和<code>环境变量</code></p>
+<p>检查完毕后就可以安装hexo了</p>
+<p>但是npm自带的源下载有些慢，我们可以使用cnpm或者nrm换源</p>
+<p>这里我们使用nrm(我的电脑用cnpm有点问题)</p>
+<h5 id="安装nrm"><a href="#安装nrm" class="headerlink" title="安装nrm"></a>安装nrm</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install nrm -g   # 全局安装nrm</span><br></pre></td></tr></table></figure>
+
+<p>安装成功后使用</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nrm ls  # 查看所有源</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pic.downk.cc/item/5e8c4e33504f4bcb040e6853.png" alt=""></p>
+<p>前面带<code>*</code>的是现在用的源，因为我之前已经换过了所以他现在就在<code>taobao</code> 的源上</p>
+<p>要切换源的话很简单</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">nrm use taobao    #切换源</span><br></pre></td></tr></table></figure>
+
+<p>然后再查看一下源确认一哈</p>
+<h5 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后检查安装是否成功</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo version # 检查hexo是否安装成功</span><br></pre></td></tr></table></figure>
+
+<p>下面我们新建一个文件夹<code>myblog</code> (找好一个合适的位置，开始初始化博客了)</p>
+<p>我们使用命令行进入这个文件夹下</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\saosao&gt;E:  # 我的新建在了E盘根目录下 </span><br><span class="line">E:\&gt;cd myblog</span><br></pre></td></tr></table></figure>
+
+<p>然后运行hexo的初始化命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">E:\myblog&gt;hexo init</span><br></pre></td></tr></table></figure>
+
+<p>等待初始化完成</p>
+<h5 id="运行博客"><a href="#运行博客" class="headerlink" title="运行博客"></a>运行博客</h5><p>初始化完成后，我们在当前目录的命令行下输入</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>运行我们初始化好的项目 他会在本地的4000端口上运行</p>
+<p>在浏览器搜索栏输入<a href="http://localhost:4000/">http://localhost:4000/</a> 就可以看到当前的页面了</p>
+<p>这篇就先到这里吧，部署再等等</p>
+<blockquote>
+<h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><p>如果出现如下错误:</p>
+<p><code>FATAL Port 4000 has been used. Try other port instead.</code><br><code>FATAL Something&#39;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</code></p>
+<p>4000端口被占用。老哥，可能你上次运行的时候忘记关掉了。</p>
+</blockquote>
+<p>​    </p>
+]]></content>
+      <categories>
+        <category>web前端</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>web前端</tag>
+        <tag>个人博客</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
