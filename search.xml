@@ -4,6 +4,8 @@
     <title>hexo博客使用ICARUS主题</title>
     <url>/2020/04/07/hexo%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8ICARUS%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>我们在搭建博客的时候通常都希望有一个自己喜欢的主题，hexo给我们提供了切换主题的方法，我们可以在网上找到自己喜欢的主题来替换，这里以icarus为例</p>
+<a id="more"></a>
+
 <h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h4><p>打开链接：<a href="https://github.com/ppoffice/hexo-theme-icarus">https://github.com/ppoffice/hexo-theme-icarus</a></p>
 <p>点击clone or download</p>
 <img src="https://pic.downk.cc/item/5e9025ba504f4bcb047168b6.jpg" style="zoom:80%;" />
